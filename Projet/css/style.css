@@ -1,6 +1,6 @@
-/** Header **/
+/* Header */
 p{
-    font-family: shrikhand;
+    font-family: toroto;
 }
 header{
     display: flex;
@@ -12,7 +12,7 @@ header img{
     width: 170px;
     margin: 20px 0 10px 0;
 }
-.Recherche{
+.Search{
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -20,8 +20,23 @@ header img{
     padding: 15px 0 15px 0;
     background-color: #eaeaea;
 }
-.Recherche__Formulaire input{
+.Search__Form input{
     border-style: none;
     text-align: center;
     background-color: #eaeaea;
+}
+/* Section1 */
+#Section1{
+    text-align: center;
+}
+.Exploration{
+    border: 1px solid red;
+}
+.Function__Bars{
+    display: flex;
+    justify-content: center;
+}
+.Function__Inside{
+    display: flex;
+    align-items: baseline;
 }
