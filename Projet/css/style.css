@@ -1,6 +1,14 @@
 /* Header */
-p{
-    font-family: toroto;
+*{
+    font-family: roboto;
+}
+a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 header{
     display: flex;
@@ -12,26 +20,30 @@ header img{
     width: 170px;
     margin: 20px 0 10px 0;
 }
-.Search{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 100%;
-    padding: 15px 0 15px 0;
-    background-color: #eaeaea;
-}
-.Search__Form input{
-    border-style: none;
-    text-align: center;
-    background-color: #eaeaea;
-}
 /* Section1 */
 #Section1{
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 15px 0 15px 0;
+}
+.Search{
+    width: 45%;
+}
+.Search__Icone-locate{
+    width: 80%;
+}
+.Search__Icone-locate input{
+    width: 85%;
+}
+/* Section2 */
+#Section2{
     text-align: center;
 }
 .Exploration{
     border: 1px solid red;
 }
+/* Section3 */
 .Function__Bars{
     display: flex;
     justify-content: center;
@@ -39,4 +51,50 @@ header img{
 .Function__Inside{
     display: flex;
     align-items: baseline;
+}
+/* Section4 */
+h2{
+    margin-left: 5%;
+}
+.Card__Menu{
+    display: flex;
+    flex-direction: column;
+}
+.Card{
+    width: 90%;
+    margin: 0 5% 5% 5%;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px 20px 20px 20px;
+}
+.Card__Img{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 165px;
+}
+.Card__Img img{
+    width: 103%;
+    height: 217px;
+    transform: translate(-2%, -24%);
+    object-fit: cover;
+}
+.Card__Body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 25px 0 10px;
+}
+.Card__Title{
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Card__Body-left p{
+    margin: 5px 0 10px 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.Card__Body-right{
+    font-size: 22px;
 }

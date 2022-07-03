@@ -6,59 +6,153 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5"> <!-- viewport --> <!-- pour avoir un meilleur retour sur telephone -->
         <link rel="stylesheet" href="./css/normalize.css" /> <!-- Lié le fichier Normalize.css -->
         <link rel="stylesheet" href="./css/style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ec4ab1634c.js" crossorigin="anonymous"></script> <!-- Importez les icones -->
         <title>Oh My Food</title>
     </head>
     <body>
         <header>
             <img src="./images/logo/ohmyfood.png" alt="Logo">
-            <div class="Search">
-                <form class="Search__Form" method="post" action="#"> <!-- Formulaire de recherche -->
-                    <span class="Search__Icone">
-                        <i class="fa-solid fa-location-dot fa-sm"></i>
-                    </span>
-                    <input type="search" value="Paris, Belleville" />
-                </form>
-            </div>
         </header>
-        <section id="Section1">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <a class="Exploration" href="#">
-                Explorer nos restaurants
-            </a>
-        </section>
-        <section id="Section2">
-            <h2>Fonctionnement</h2>
-            <div class="Function">
-                <div class="Function__Bars">
-                    <p>1</p>
-                    <div class="Function__Inside">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choisissez un restaurant</p>
+        <main>
+            <section id="Section1">
+                <div class="Search">
+                    <form class="Search__Form" method="post" action="#"> <!-- Formulaire de recherche -->
+                        <span class="Search__Icone">
+                            <i class="fa-solid fa-location-dot fa-sm Search__Icone-locate">
+                                <input type="search" value="Paris, Belleville" />
+                            </i>
+                        </span>
+                    </form>
+                </div>
+            </section>
+            <section id="Section2">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <a class="Exploration" href="#">
+                    Explorer nos restaurants
+                </a>
+            </section>
+            <section id="Section3">
+                <h2>Fonctionnement</h2>
+                <div class="Function">
+                    <div class="Function__Bars">
+                        <p>1</p>
+                        <div class="Function__Inside">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
+                    </div>
+                    <div class="Function__Bars">
+                        <p>2</p>
+                        <div class="Function__Inside">
+                            <i class="fa-solid fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                    </div>
+                    <div class="Function__Bars">
+                        <p>3</p>
+                        <div class="Function__Inside">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
                     </div>
                 </div>
-                <div class="Function__Bars">
-                    <p>2</p>
-                    <div class="Function__Inside">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <p>Composez votre menu</p>
+            </section>
+            <section id="Section4">
+                <h2>Restaurants</h2>
+                <div class="Card__Menu">
+                    <div class="Card"> <!-- Card La Palette du Goût -->
+                        <div class="Card__Img">
+                            <img src="./images/restaurants/LaPaletteDuGoût.jpg" alt="La Palette Du Gout">
+                        </div>
+                        <div class="Card__Body">
+                            <div class="Card__Body-left">
+                                <span class="Card__Title">
+                                    La palette du goût
+                                </span>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="Card__Body-right">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Card"> <!-- Card La note enchantée -->
+                        <div class="Card__Img">
+                            <img src="./images/restaurants/LaNoteEnchantée.jpg" alt="La Note Enchantée">
+                        </div>
+                        <div class="Card__Body">
+                            <div class="Card__Body-left">
+                                <span class="Card__Title">
+                                    La note enchantée
+                                </span>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="Card__Body-right">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Card"> <!-- Card À la française -->
+                        <div class="Card__Img">
+                            <img src="./images/restaurants/ÀLaFrançaise.jpg" alt="À la Française">
+                        </div>
+                        <div class="Card__Body">
+                            <div class="Card__Body-left">
+                                <span class="Card__Title">
+                                    À la française
+                                </span>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="Card__Body-right">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Card"> <!-- Card Le délice des sens -->
+                        <div class="Card__Img">
+                            <img src="./images/restaurants/LeDéliceDesSens.jpg" alt="Le Délice des Sens">
+                        </div>
+                        <div class="Card__Body">
+                            <div class="Card__Body-left">
+                                <span class="Card__Title">
+                                    Le délice des sens
+                                </span>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="Card__Body-right">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="Function__Bars">
-                    <p>3</p>
-                    <div class="Function__Inside">
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </div>
-                </div>
+            </section>
+        </main>
+        <footer>
+            <div id="Footer">
+                <h3>ohmyfood</h3>
+                <ul id="Footer__Info">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-utensils"></i>
+                            Proposer un restaurant
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            Devenir partenaire
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <section id="Section3">
-            <div class="">
-
-            </div>
-        </section>
+        </footer>
     </body>
 </html>
