@@ -27,21 +27,26 @@ header img{
     background-color: #eaeaea;
     padding: 15px 0 15px 0;
 }
-.Search{
-    width: 45%;
-}
-.Search__Icone-locate{
-    width: 80%;
-}
-.Search__Icone-locate input{
-    width: 85%;
+.Search__Icone input{
+    padding-left: 15px;
+    border: none;
+    width: 70%;
+    background-color: #eaeaea;
 }
 /* Section2 */
 #Section2{
+    margin: 5%;
     text-align: center;
 }
 .Exploration{
     border: 1px solid red;
+}
+h1{
+    font-size: 23px;
+    margin: 0 10% 0 10%;
+}
+#Section2 p{
+    font-size: 17px;
 }
 /* Section3 */
 .Function__Bars{
@@ -97,4 +102,22 @@ h2{
 }
 .Card__Body-right{
     font-size: 22px;
+}
+/* Footer */
+footer{
+    background-color: black;
+}
+#Footer h3{
+    margin: 0 0 5% 5%;
+    padding-top: 5%;
+    color: white;
+}
+ul{
+    padding: 0%;
+    margin: 5%;
+    margin-block-end: 0;
+    padding-bottom: 10%;
+}
+li a{
+    color: white;
 }
