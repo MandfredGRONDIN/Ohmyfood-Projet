@@ -21,6 +21,9 @@ header img{
     margin: 20px 0 10px 0;
 }
 /* Section1 */
+.Search{
+    width: 45%;
+}
 #Section1{
     display: flex;
     justify-content: center;
@@ -30,46 +33,85 @@ header img{
 .Search__Icone input{
     padding-left: 15px;
     border: none;
-    width: 70%;
+    width: 90%;
     background-color: #eaeaea;
 }
 /* Section2 */
 #Section2{
-    margin: 5%;
+    margin: 15% 5% 25% 5%;
     text-align: center;
 }
 .Exploration{
-    border: 1px solid red;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0px 9px 15px #eeeeee;
+    background: linear-gradient(172deg, rgba(255,121,218,1) 10%, rgba(147,86,220,1) 90%);
+    color: #eeeeee;
 }
 h1{
     font-size: 23px;
     margin: 0 10% 0 10%;
 }
 #Section2 p{
+    margin: 20px 0 30px 0;
     font-size: 17px;
 }
 /* Section3 */
+.Function{
+    margin-top: 10%;
+}
 .Function__Bars{
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+    margin:5% 0 6% 7%;
+    padding: 8px 0 8px 0;
+    width: 87%;
+    box-shadow: 0px 6px 12px 3px #eeeeee;
+    border-radius: 15px;
+}
+.Function__Bars-Num{
+    width: 7%;
+    margin: 0 7% 0 -13px;
+    font-size: 11px;
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%;
+    padding: 1.5%;
+    text-align: center;
 }
 .Function__Inside{
     display: flex;
     align-items: baseline;
+    width: 11%;
+    font-size: 16.5px;
+}
+.Function__Inside p{
+    text-align: center;
+    width: 100%;
+}
+.Function__P{
+    
 }
 /* Section4 */
+#Section4{
+    padding-top: 30%;
+    background-color: #f6f6f6;
+}
 h2{
     margin-left: 5%;
 }
 .Card__Menu{
     display: flex;
     flex-direction: column;
+    padding-bottom: 10%;
 }
 .Card{
     width: 90%;
+    height: 240px;
     margin: 0 5% 5% 5%;
     overflow: hidden;
-    box-shadow: 0px 5px 20px #999;
+    box-shadow: 0px 8px 9px 7px #eeeeee;
     border-radius: 20px 20px 20px 20px;
 }
 .Card__Img{
@@ -88,36 +130,40 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 25px 0 10px;
+    margin: 15px 25px 0 10px;
 }
 .Card__Title{
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 .Card__Body-left p{
     margin: 5px 0 10px 5px;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 16.5px;
 }
 .Card__Body-right{
     font-size: 22px;
 }
 /* Footer */
 footer{
-    background-color: black;
+    background-color: #353535;
 }
 #Footer h3{
     margin: 0 0 5% 5%;
-    padding-top: 5%;
-    color: white;
+    padding-top: 7%;
+    color: #ffffff;
+    font-family: shrikhand;
+    font-size: 17px;
 }
 ul{
-    padding: 0%;
+    padding: 0 0 8% 0;
     margin: 5%;
     margin-block-end: 0;
-    padding-bottom: 10%;
+
 }
 li a{
     color: white;
+}
+li{
+    margin: 2% 0 2% 0;
 }
