@@ -11,9 +11,7 @@ ul{
     list-style: none;
 }
 header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 header img{
     height: 30px;
@@ -29,9 +27,13 @@ header img{
     justify-content: center;
     background-color: #eaeaea;
     padding: 15px 0 15px 0;
+    color: #353535;
+    font-weight: bold;
+    box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.26);
 }
 .Search__Icone input{
-    padding-left: 15px;
+    color: #353535;
+    text-align: center;
     border: none;
     width: 90%;
     background-color: #eaeaea;
@@ -69,6 +71,12 @@ h1{
     box-shadow: 0px 6px 12px 3px #eeeeee;
     border-radius: 15px;
 }
+.Function__Bars:hover{
+    background-color: #f5edff;
+}
+.Function__Bars:hover .Function__Inside{
+    color: #9356DC;
+}
 .Function__Bars-Num{
     width: 7%;
     margin: 0 7% 0 -13px;
@@ -91,7 +99,7 @@ h1{
     width: 100%;
 }
 .Function__P{
-    
+    font-weight: bold;
 }
 /* Section4 */
 #Section4{
@@ -100,6 +108,17 @@ h1{
 }
 h2{
     margin-left: 5%;
+}
+.Card__New{
+    position: absolute;
+    top: 0;
+    right: 4%;
+    padding: 5px 11px 5px 11px;
+    border: 1px solid #99e2d0;
+    background: #99e2d0;
+    color: #0a8d6d;
+    font-weight: bold;
+    font-size: 14px;
 }
 .Card__Menu{
     display: flex;
@@ -113,6 +132,7 @@ h2{
     overflow: hidden;
     box-shadow: 0px 8px 9px 7px #eeeeee;
     border-radius: 20px 20px 20px 20px;
+    position: relative;
 }
 .Card__Img{
     width: 100%;
@@ -130,20 +150,57 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 25px 0 10px;
+    width: 97%;
+    height: 75px;
 }
 .Card__Title{
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 18px;
     font-weight: bold;
 }
 .Card__Body-left p{
-    margin: 5px 0 10px 5px;
+    margin: 5px 0 10px 10px;
     font-size: 16.5px;
-}
+} 
+/* Partie Heart */
 .Card__Body-right{
     font-size: 22px;
+    position: relative;
+    width: 8%;
+    margin: 20px 20px 40px 0;
+    z-index: 1;
 }
+.Card__Body-right:hover .Heart{
+    opacity: 0;
+}
+.Card__Body-right .Heart{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: black;
+    opacity: 1;
+    z-index: -1;
+    transition: opacity 500ms;
+}
+.Card__Body-right:hover .Heart__Like{
+    visibility: inherit;
+    opacity: 1;
+}
+.Card__Body-right .Heart__Like{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0; 
+    z-index: -1;
+    transition: opacity 500ms;
+    background: -webkit-linear-gradient(95deg, rgba(255,121,218,1) 4%, rgba(147,86,220,1) 43%); /* Permet de modifier la couleur du coeur cacher */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+/* Partie Heart Fin */
 /* Footer */
 footer{
     background-color: #353535;
@@ -159,7 +216,6 @@ ul{
     padding: 0 0 8% 0;
     margin: 5%;
     margin-block-end: 0;
-
 }
 li a{
     color: white;
