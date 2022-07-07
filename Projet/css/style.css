@@ -64,42 +64,46 @@ h1{
 }
 .Function__Bars{
     display: flex;
-    align-items: baseline;
-    margin:5% 0 6% 7%;
+    align-items: center;
+    position: relative;
+}
+.Function__Inside:hover{
+    background-color: #f5edff;
+    cursor: pointer;
+}
+.Function__Inside:hover .Function__Icone{
+    color: #9356DC;
+}
+.Function__Bars-Num{
+    font-size: 11px;
+    margin: 0 0 0 5%;
+    border: 1px solid #9356DC;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 100%;
+    padding: 7px;
+    text-align: center;
+    position: absolute;
+}
+.Function__Inside{
+    display: flex;
+    align-items: center;
+    margin:3% 0 3% 7%;
     padding: 8px 0 8px 0;
     width: 87%;
     box-shadow: 0px 6px 12px 3px #eeeeee;
     border-radius: 15px;
 }
-.Function__Bars:hover{
-    background-color: #f5edff;
-}
-.Function__Bars:hover .Function__Inside{
-    color: #9356DC;
-}
-.Function__Bars-Num{
-    width: 7%;
-    margin: 0 7% 0 -13px;
-    font-size: 11px;
-    border: 1px solid #9356DC;
-    background-color: #9356DC;
-    color: white;
-    border-radius: 50%;
-    padding: 1.5%;
-    text-align: center;
-}
-.Function__Inside{
+.Function__Icone{
     display: flex;
     align-items: baseline;
-    width: 11%;
     font-size: 16.5px;
-}
-.Function__Inside p{
-    text-align: center;
-    width: 100%;
+    width: 15%;
+    justify-content: flex-end;
 }
 .Function__P{
     font-weight: bold;
+    margin-left: 7%;
 }
 /* Section4 */
 #Section4{
@@ -150,7 +154,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 97%;
+    width: 100%;
     height: 75px;
 }
 .Card__Title{
@@ -166,40 +170,45 @@ h2{
 .Card__Body-right{
     font-size: 22px;
     position: relative;
-    width: 8%;
-    margin: 20px 20px 40px 0;
-    z-index: 1;
 }
-.Card__Body-right:hover .Heart{
+.Heart{
+    position: absolute;
+    left: -40px;
+    top: -25px;
+}
+.Heart__Like{
+    position: absolute;
+    left: -40px;
+    top: 0px;
     opacity: 0;
-}
-.Card__Body-right .Heart{
-    position: absolute; 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: black;
-    opacity: 1;
-    z-index: -1;
-    transition: opacity 500ms;
-}
-.Card__Body-right:hover .Heart__Like{
-    visibility: inherit;
-    opacity: 1;
-}
-.Card__Body-right .Heart__Like{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0; 
-    z-index: -1;
-    transition: opacity 500ms;
     background: -webkit-linear-gradient(95deg, rgba(255,121,218,1) 4%, rgba(147,86,220,1) 43%); /* Permet de modifier la couleur du coeur cacher */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-} 
+}
+.Card__Body-right:hover .Heart__Like{
+    animation: SlideUp 1s forwards;
+}
+.Card__Body-right:hover .Heart{
+    animation: HeartNone .5s forwards;
+}
+@keyframes SlideUp{
+    from{
+        opacity: 0;
+        top: 0;
+    }
+    to{
+        opacity: 1;
+        top: -25px;
+    }
+}
+@keyframes HeartNone{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
 /* Partie Heart Fin */
 /* Footer */
 footer{
@@ -222,4 +231,8 @@ li a{
 }
 li{
     margin: 2% 0 2% 0;
+}
+.IconeFooter{
+    width: 5%;
+    font-size: 12px;
 }
