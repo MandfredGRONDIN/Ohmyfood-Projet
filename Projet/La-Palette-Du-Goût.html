@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5"> <!-- viewport --> <!-- pour avoir un meilleur retour sur telephone -->
         <link rel="stylesheet" href="./css/normalize.css" /> <!-- Lié le fichier Normalize.css -->
         <link rel="stylesheet" href="./css/menu.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ec4ab1634c.js" crossorigin="anonymous"></script> <!-- Importez les icones -->
         <title>La palette du goût</title>
     </head>
@@ -23,98 +25,130 @@
                 <img src="./images/restaurants/LaPaletteDuGoût.jpg" alt="La Palette Du Goût">
             </section>
             <section class="Section2">
-                <div class="Card">
+                <div class="Card__Big">
                     <div class="Card__Header">
-                        <h1>La Palette du goût</h1>
-                        <i class="fa-regular fa-heart Heart"></i>
+                        <h1>La palette du goût</h1>
+                        <div class="Card__Heart">
+                            <div class="Card__Heart-menu">
+                                <i class="fa-regular fa-heart Heart"></i>
+                                <i class="fa-solid fa-heart Heart__Like"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="Entrance">
-                        <p>ENTRÉES</p>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                    <div class="Card__Menu">
+                        <p class="Card__Title">ENTRÉES</p>
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Fricassée d'escargot</p>
-                                <p class="Dish-bot">Au piment d'Espelette</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Au piment d'Espelette</p>
+                                    <p class="Price">25€</p>
+                                </div>
                             </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">25€</p>
-                            </div>
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>                         
                         </div>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Foie gras de canard mi-cuit</p>
-                                <p class="Dish-bot">Et ses copeaux de truffe noire</p>
-                            </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">35€</p>
-                            </div>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Et ses copeaux de truffe noire</p>
+                                    <p class="Price">35€</p>
+                                </div>
+                            </div> 
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>                          
                         </div>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Oeuf au plat</p>
-                                <p class="Dish-bot">Assaisonné à la truffe sur lit de caviar</p>
-                            </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">20€</p>
-                            </div>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Assaisonné à la truffe sur lit de caviar</p>
+                                    <p class="Price">20€</p>
+                                </div>
+                            </div> 
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>                          
                         </div>
                     </div>
-                    <div class="Dishes">
-                        <p>PLATS</p>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                    <div class="Card__Menu">
+                        <p class="Card__Title">PLATS</p>
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Filet de boeuf aux herbes</p>
-                                <p class="Dish-bot">Accompagné de sa ribambelle de légumes</p>
-                            </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">40€</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Accompagné de sa ribambelle de légumes</p>
+                                    <p class="Price">40€</p>
+                                </div>
+                            </div> 
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Parmentier de queue de boeuf</p>
-                                <p class="Dish-bot">À la truffe noire sur sa purée de panais</p>
-                            </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">35€</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">À la truffe noire sur sa purée de panais</p>
+                                    <p class="Price">35€</p>
+                                </div>
+                            </div> 
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Filet de turbot</p>
-                                <p class="Dish-bot">Aux agrumes</p>
-                            </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">44€</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Aux agrumes</p>
+                                    <p class="Price">44€</p>
+                                </div>
+                            </div> 
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="Desserts">
-                        <p>DESSERTS</p>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                    <div class="Card__Menu">
+                        <p class="Card__Title">DESSERTS</p>
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Paris-Brest</p>
-                                <p class="Dish-bot">Revisité</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Revisité</p>
+                                    <p class="Price">18€</p>
+                                </div>
                             </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">18€</p>
-                            </div>
-                        </div>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
-                                <p class="Dish-top">Macaron au chocolat d'exception </p>
-                                <p class="Dish-bot">Et glace à la vanille de Madagascar</p>
-                            </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">22€</p>
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
-                        <div class="Card__Entrance">
-                            <div class="Card__Entrance-left">
+                        <div class="Card">
+                            <div class="Card-left">
+                                <p class="Dish-top">Macaron au chocolat d'exception</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Et glace à la vanille de Madagascar</p>
+                                    <p class="Price">22€</p>
+                                </div>
+                            </div>
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="Card">
+                            <div class="Card-left">
                                 <p class="Dish-top">Mousse au chocolat</p>
-                                <p class="Dish-bot">Au piment d'Espelette et à la truffe noire</p>
+                                <div class="Dish-bot">
+                                    <p class="Dish">Au piment d'Espelette et à la truffe noire</p>
+                                    <p class="Price">23€</p>
+                                </div>
                             </div>
-                            <div class="Card__Entrance_right">
-                                <p class="Price">23€</p>
+                            <div class="Card-right">
+                                <i class="fa-solid fa-circle-check"></i>
                             </div>
                         </div>
                     </div>

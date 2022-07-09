@@ -29,6 +29,144 @@ header img{
 .Section1 img{
     width: 100%;
 }
+/* Fin Section 1 */
+/* Section 2 */
+
+h1{
+    font-family: shrikhand;
+    font-size: 28px;
+    font-weight: initial;
+}
+/* Partie Heart */
+.Card__Heart{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Card__Heart-menu{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Heart__Like{
+    font-size: 0;
+    transition: all 1s ease-in-out;
+    left: 12.5px;
+    top: 25px;
+    background: -webkit-linear-gradient(95deg, rgba(255,121,218,1) 4%, rgba(147,86,220,1) 43%); /* Permet de modifier la couleur du coeur cacher */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Heart{
+    font-size: 25px;
+    left: 0;
+}
+.Heart__Like,.Heart{
+    position: absolute;
+}
+.Card__Heart-menu:hover .Heart__Like{
+    left: 0;
+    top: 0;
+    font-size: 25px;
+}
+/* Fin Partie Heart */
+.Card__Title{
+    margin-left: 5%;
+    box-shadow: 0px 3px #99E2D0;
+    width: 40px;
+    height: 22px;
+}
+.Card__Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 10% 0 5%;
+}
+.Card{
+    display: flex;
+    justify-content: space-between;
+    width: 93%; 
+    margin: 4%; 
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Card-left{
+    width: 100%;
+    height: 65px;
+    transition: all 0.5s ease-out;
+}
+.Card-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    color: #ffffff;
+    font-size: 19px;
+    overflow: hidden;
+    transition: all .5s ease-out;
+}
+.Card:hover .Card-right{
+    width: 15%;
+}
+.Card:hover .Card-left{
+    width: 85%;
+}
+.Card:active .Card-right{
+    width: 15%;
+}
+.Card:active .Card-left{
+    width: 85%;
+}
+.Dish-top{
+    margin: 10px 0 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Dish-bot{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px 10px 10px;
+    font-size: 15px;
+}
+.Dish{
+    width: 85%;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Price{
+    margin: 0;
+}
+.Card__Menu{
+    margin-top: 40px;
+}
+.Btn__Commander{
+    text-align: center;
+    margin: 50px 0 60px 0;
+}
+.Commander{
+    border-radius: 20px;
+    padding: 12px 48px 12px 48px;
+    box-shadow: 0px 9px 15px #eeeeee;
+    background: linear-gradient(172deg, rgba(255,121,218,1) 10%, rgba(147,86,220,1) 90%);
+    color: #eeeeee;
+}
+/* Fin Section 2 */
 /* Footer */
 footer{
     background-color: #353535;
