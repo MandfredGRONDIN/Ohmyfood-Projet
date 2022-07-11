@@ -9,7 +9,7 @@ a{
 }
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 header img{
@@ -24,26 +24,43 @@ header img{
 .Header__Logo{
     width: 70%;
 }
+.Survol:hover{
+    filter: brightness(1.15);
+    box-shadow: 0px 0px 20px #999;
+}
 /* Header */
+/* Main */
+.Section1{
+    height: 200px;
+}
+.Section2{
+    position: relative;
+    border-radius: 30px;
+    background: #ffffff;
+}
+/* Main */
 /* Section 1 */
 .Section1 img{
     width: 100%;
 }
+h1{
+    margin: 35px 0 0 0;
+}
 /* Fin Section 1 */
 /* Section 2 */
-
 h1{
     font-family: shrikhand;
     font-size: 28px;
     font-weight: initial;
+    width: 100%;
 }
 /* Partie Heart */
 .Card__Heart{
-    width: 50px;
+    width: 51px;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     cursor: pointer;
 }
 .Card__Heart-menu{
@@ -81,7 +98,10 @@ h1{
     margin-left: 5%;
     box-shadow: 0px 3px #99E2D0;
     width: 40px;
-    height: 22px;
+    height: 22px; /* Animation */
+    animation: ItemAppear 0.6s;
+    transform: scale(0);
+    animation-fill-mode: both; /* Animation */
 }
 .Card__Header{
     display: flex;
@@ -94,7 +114,7 @@ h1{
     justify-content: space-between;
     width: 93%; 
     margin: 4%; 
-    box-shadow: 0px 5px 20px #999;
+    box-shadow: 1px 2px 10px #999;
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
@@ -116,8 +136,16 @@ h1{
     overflow: hidden;
     transition: all .5s ease-out;
 }
+.Check{
+    transform: rotate(0deg);
+}
 .Card:hover .Card-right{
     width: 15%;
+}
+.Card:hover .Check{
+    transform: rotate(360deg);
+    transition: all .5s ease-out;
+    animation-fill-mode: both;
 }
 .Card:hover .Card-left{
     width: 85%;
@@ -152,9 +180,63 @@ h1{
 .Price{
     margin: 0;
 }
+/* Apparition progressive */
 .Card__Menu{
     margin-top: 40px;
 }
+.Card{
+    animation: ItemAppear 0.6s;
+    transform: scale(0);
+    animation-fill-mode: both;
+}
+.C1{
+    animation-delay: .5s;
+}
+.C2{
+    animation-delay: .6s;
+}
+.C3{
+    animation-delay: .7s;
+}
+.C4{
+    animation-delay: .8s;
+}
+.C5{
+    animation-delay: .9s;
+}
+.C6{
+    animation-delay: 1s;
+}
+.C7{
+    animation-delay: 1.1s;
+}
+.C8{
+    animation-delay: 1.2s;
+}
+.C9{
+    animation-delay: 1.3s;
+}
+.C10{
+    animation-delay: 1.4s;
+}
+.C11{
+    animation-delay: 1.5s;
+}
+.C12{
+    animation-delay: 1.6s;
+}
+.C13{
+    animation-delay: 1.7s;
+}
+@keyframes ItemAppear{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* Animation progressive */
 .Btn__Commander{
     text-align: center;
     margin: 50px 0 60px 0;
@@ -162,7 +244,7 @@ h1{
 .Commander{
     border-radius: 20px;
     padding: 12px 48px 12px 48px;
-    box-shadow: 0px 9px 15px #eeeeee;
+    box-shadow: 1px 2px 10px #999;
     background: linear-gradient(172deg, rgba(255,121,218,1) 10%, rgba(147,86,220,1) 90%);
     color: #eeeeee;
 }
