@@ -180,53 +180,114 @@ h1{
 .Price{
     margin: 0;
 }
+/* Loading page */
+.Load{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.Loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: loader .25s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes loader{
+    100%{
+        opacity: 0;
+        z-index: -10;
+    }
+}
+.Cl1{
+    color: #9356DC;
+}
+.Cl2{
+    color: #FF79DA;
+}
+.Cl3{
+    color: #99E2D0;
+}
+.Loading{
+    height: 20px;
+    width: 20px;
+    animation: slide 2s;
+    animation-iteration-count: 1;
+}
+@keyframes slide{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    49%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    51%{
+        opacity: 0;
+        transform: translateX(120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Loading page */
 /* Apparition progressive */
 .Card__Menu{
     margin-top: 40px;
 }
 .Card{
-    animation: ItemAppear 0.6s;
+    animation: ItemAppear 1.6s;
     transform: scale(0);
     animation-fill-mode: both;
 }
 .C1{
-    animation-delay: .5s;
-}
-.C2{
-    animation-delay: .6s;
-}
-.C3{
-    animation-delay: .7s;
-}
-.C4{
-    animation-delay: .8s;
-}
-.C5{
-    animation-delay: .9s;
-}
-.C6{
-    animation-delay: 1s;
-}
-.C7{
-    animation-delay: 1.1s;
-}
-.C8{
-    animation-delay: 1.2s;
-}
-.C9{
-    animation-delay: 1.3s;
-}
-.C10{
-    animation-delay: 1.4s;
-}
-.C11{
     animation-delay: 1.5s;
 }
-.C12{
+.C2{
     animation-delay: 1.6s;
 }
-.C13{
+.C3{
     animation-delay: 1.7s;
+}
+.C4{
+    animation-delay: 1.8s;
+}
+.C5{
+    animation-delay: 1.9s;
+}
+.C6{
+    animation-delay: 2s;
+}
+.C7{
+    animation-delay: 2.1s;
+}
+.C8{
+    animation-delay: 2.2s;
+}
+.C9{
+    animation-delay: 2.3s;
+}
+.C10{
+    animation-delay: 2.4s;
+}
+.C11{
+    animation-delay: 2.5s;
+}
+.C12{
+    animation-delay: 2.6s;
+}
+.C13{
+    animation-delay: 2.7s;
 }
 @keyframes ItemAppear{
     0%{
