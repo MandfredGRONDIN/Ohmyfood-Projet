@@ -105,7 +105,6 @@ header img{
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1600px;
 }
 /* Main */
 /* Section 1 */
@@ -140,7 +139,6 @@ h1{
     position: relative;
     overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .Heart__Like{
@@ -209,16 +207,6 @@ h1{
     align-items: baseline;
     margin: 0 10% 0 5%;
 }
-.Card{
-    display: flex;
-    justify-content: space-between;
-    width: 93%; 
-    margin: 4%; 
-    box-shadow: 1px 2px 10px #999;
-    border-radius: 15px;
-    overflow: hidden;
-    cursor: pointer;
-}
 .Card-left{
     width: 100%;
     height: 65px;
@@ -232,7 +220,7 @@ h1{
     background-color: #99E2D0;
     border-radius: 0 15px 15px 0;
     color: #ffffff;
-    font-size: 19px;
+    font-size: 21px;
     overflow: hidden;
     transition: all .5s ease-out;
 }
@@ -240,7 +228,7 @@ h1{
     transform: rotate(0deg);
 }
 .Card:hover .Card-right{
-    width: 15%;
+    width: 17%;
 }
 .Card:hover .Check{
     transform: rotate(360deg);
@@ -248,7 +236,7 @@ h1{
     animation-fill-mode: both;
 }
 .Card:hover .Card-left{
-    width: 85%;
+    width: 83%;
 }
 .Card:active .Card-right{
     width: 15%;
@@ -279,15 +267,25 @@ h1{
 }
 .Price{
     margin: 0;
+    font-weight: bold;
 }
 /* Apparition progressive */
 .Card__Menu{
-    margin-top: 35px;
+    margin-top: 30px;
     width: 100%;
 }
 .Card{
-    animation: ItemAppear 1.6s;
-    transform: scale(0);
+    display: flex;
+    justify-content: space-between;
+    width: 93%; 
+    margin: 4%; 
+    box-shadow: 1px 2px 10px #999;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 550px;
+    animation: ItemAppear .5s;
+    transform: translateY(10px);
     animation-fill-mode: both;
 }
 .C1{
@@ -303,44 +301,46 @@ h1{
     animation-delay: 2.1s;
 }
 .C5{
-    animation-delay: 2.3s;
-}
-.C6{
     animation-delay: 2.5s;
 }
-.C7{
+.C6{
     animation-delay: 2.7s;
 }
-.C8{
+.C7{
     animation-delay: 2.9s;
 }
-.C9{
+.C8{
     animation-delay: 3.1s;
 }
-.C10{
+.C9{
     animation-delay: 3.3s;
 }
-.C11{
+.C10{
     animation-delay: 3.5s;
 }
-.C12{
+.C11{
     animation-delay: 3.7s;
 }
-.C13{
+.C12{
     animation-delay: 3.9s;
+}
+.C13{
+    animation-delay: 2.3s;
 }
 @keyframes ItemAppear{
     0%{
-        transform: scale(0);
+        opacity: 0;
+        transform: translateY(10px);
     }
     100%{
-        transform: scale(1);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 /* Animation progressive */
 .Btn__Commander{
     text-align: center;
-    margin: 65px 0 65px 0;
+    margin: 65px 0 80px 0;
 }
 .Commander{
     border-radius: 25px;
@@ -354,8 +354,18 @@ h1{
 footer{
     background-color: #353535;
 }
+footer #Footer{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+#Footer{
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+}
 #Footer h3{
-    margin: 0 0  10px 25px;
+    margin: 0 0  10px 0;
     padding-top: 25px;
     color: #ffffff;
     font-family: shrikhand;
@@ -364,7 +374,7 @@ footer{
 ul{
     list-style: none;
     padding: 0 0 15px 0;
-    margin: 20px 0 0 25px;
+    margin: 0;
     margin-block-end: 0;
 }
 li a{
@@ -379,6 +389,16 @@ li{
 }
 /* Fin Css Mobile */
 /* Responsive Tablette */
+@media all and (min-width:768px) and (max-width: 992px)
+{
+    .Card{
+        max-width: 500px;
+    }
+    .Section2{
+        max-width: 550px;
+    }
+}
+/* Responsive desktop */
 @media all and (min-width:992px)
 {
     #Card__Menu{
@@ -391,5 +411,34 @@ li{
         max-width: 600px;
         width: 100%;
     }
-    
+    .Section2{
+        max-width: 1400px;
+    }
+    .Card{
+        max-width: 434px;
+    }
+    .C5{
+        animation-delay: 1.5s;
+    }
+    .C9{
+        animation-delay: 1.5s;
+    }
+    .C6{
+        animation-delay: 1.7s;
+    }
+    .C7{
+        animation-delay: 1.9s;
+    }
+    .C8{
+        animation-delay: 2.1s;
+    }
+    .C10{
+        animation-delay: 1.7s;
+    }
+    .C11{
+        animation-delay: 1.9s;
+    }
+    .C12{
+        animation-delay: 2.1s;
+    }
 }
